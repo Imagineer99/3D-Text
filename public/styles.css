@@ -1,0 +1,134 @@
+body {
+    background-color: #1f1f1f !important;
+    color: #e0e0e0 !important;
+  }
+  
+  .container {
+    background-color: #2c2c2c !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .card {
+    background-color: #373737 !important;
+    border: 1px solid #444 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .card-title {
+    color: #fff !important;
+  }
+  
+  /* Neon glow on hover */
+  .card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+    outline: 1px solid #0ff; /* Subtle neon glow outline */
+  }
+  
+  .container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  }
+  /* Add this to your styles.css file */
+  .modal-body {
+    text-align: center !important; /* Center the content within the modal body */
+  }
+  
+  .modal-body img.img-fluid {
+    border-radius: 0.25rem !important; /* Same border-radius as card images */
+    max-width: 100% !important; /* Make sure the image doesn't exceed its container width */
+    height: auto !important; /* Maintain the aspect ratio of the original image */
+    display: block !important; /* Ensure the image is treated as a block element */
+    margin: 0 auto !important; /* Center the image horizontally */
+  }
+  
+  .modal-text {
+    text-align: center !important; /* Center the text within the modal body */
+    margin-top: 15px !important; /* Adjust the top margin as needed */
+  }
+  
+  .text-muted {
+    color: #888 !important; /* Set the text color for the description */
+  }/* Add this to your styles.css file */
+  .modal {
+    border: none !important; /* Remove borders for the entire modal */
+  }
+  
+  .modal-content {
+    border: none !important; /* Remove borders for the modal content */
+  }
+  
+  .modal-body {
+    text-align: center !important; /* Center the content within the modal body */
+    padding: 0 !important; /* Remove padding for the modal body */
+  }
+  /* Add this to your styles.css file */
+  .modal {
+    border-radius: 0.25rem !important; /* Add slight border-radius to the entire modal */
+  }
+  
+  .modal-content {
+    border-radius: 0.25rem !important; /* Add slight border-radius to the modal content */
+    background-color: rgba(0, 0, 0, 0.3) !important; /* Dark and slightly transparent background */
+  }
+  
+  .modal-body {
+    text-align: center !important; /* Center the content within the modal body */
+    padding: 0 !important; /* Remove padding for the modal body */
+  }
+  
+  .modal-body img.img-fluid {
+    border-radius: 0.25rem !important;
+    border-radius/* Add slight border-radius to the image */
+    max-width: 100% !important; /* Make sure the image doesn't exceed its container width */
+    height: auto !important; /* Maintain the aspect ratio of the original image */
+    display: block !important; /* Ensure the image is treated as a block element */
+    margin: 0 auto !important; /* Center the image horizontally */
+  }
+  
+  .modal-text {
+    text-align: center !important; /* Center the text within the modal body */
+    margin-top: 15px !important;
+    margin-left: 10px !important; 
+    margin-right: 10px !important; /* Adjust the top margin as needed */
+  }
+  
+  /* Add this to your styles.css file */
+  .modal {
+    border-radius: 0.25rem !important; /* Add slight border-radius to the entire modal */
+  }
+  
+  .modal-content {
+    border-radius: 0.25rem !important; /* Add slight border-radius to the modal content */
+    background-color: rgba(0, 0, 0, 0.3) !important; /* Dark and slightly transparent background */
+  }
+  
+  .modal-body {
+    text-align: center !important; /* Center the content within the modal body */
+    padding: 0 !important; /* Remove padding for the modal body */
+  }
+  
+  .modal-body img.img-fluid {
+    border-radius: 0.25rem 0.25rem 0 0 !important; /* Add border-radius only to the top corners of the image */
+    max-width: 100% !important; /* Make sure the image doesn't exceed its container width */
+    height: auto !important; /* Maintain the aspect ratio of the original image */
+    display: block !important; /* Ensure the image is treated as a block element */
+    margin: 0 auto !important; /* Center the image horizontally */
+  }
+  
+  .modal-text {
+    text-align: center !important; /* Center the text within the modal body */
+    margin-top: 15px !important;
+    margin-left: 10px !important; 
+    margin-right: 10px !important; /* Adjust the top margin as needed */
+  }
+  
+  .text-muted {
+    color: #fff !important; /* Set the text color for the description to white */
+  }
+  
+  
+  
