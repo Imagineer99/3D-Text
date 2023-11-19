@@ -208,6 +208,7 @@ body::before {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+
 }
 
 .btn {
@@ -421,3 +422,23 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* or any color you prefer on hover */
 }
+/* Add this to your styles.css file or in your existing CSS */
+.btn-danger {
+  background-color: #000 !important; /* Set the background color to black */
+ 
+}
+
+.btn-danger:hover {
+  filter: brightness(50%) !important;
+}
+/* Add this to your styles.css file or in your existing CSS */
+.btn-danger {
+  background-color: #000 !important; /* Set the background color to black */
+  margin: 0 !important; /* Ensure the button has 0 margin */
+  padding: 1px 5px !important; /* Optional: Adjust padding as needed */
+  font-size: 24px !important; /* Adjust the font size as needed */
+  margin-top: -20px !important; 
+  margin-bottom: 0px !important;
+}
+
+
