@@ -10,74 +10,90 @@
 <body>
 
   <div class="container mt-5">
-    <h1 class="text-center mb-4">@ChetBff</h1>
-
     <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <a href="#" data-toggle="modal" data-target="#exampleModal" data-description="Description for Artwork 1">
-            <img src="https://th.bing.com/th/id/OIG.DPTxPWtWB.t_1er.FKku?w=1024&h=1024&rs=1&pid=ImgDetMain" class="card-img-top" alt="Artwork 1">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Artwork Title 1</h5>
-          </div>
-        </div>
+      <div class="col-md-12 text-center">
+        <img src="https://pbs.twimg.com/profile_images/1626973782773493760/_BzgBsTU_400x400.jpg" class="img-fluid rounded-circle" alt="Profile Logo" style="width: 100px; height: 100px;">
+        <h1 class="mb-4">@ChetBff</h1>
       </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <a href="#" data-toggle="modal" data-target="#exampleModal" data-description="Description for Artwork 2">
-            <img src="https://th.bing.com/th/id/OIG.DPTxPWtWB.t_1er.FKku?w=1024&h=1024&rs=1&pid=ImgDetMain" class="card-img-top" alt="Artwork 2">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Artwork Title 2</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <a href="#" data-toggle="modal" data-target="#exampleModal" data-description="Description for Artwork 3">
-            <img src="https://th.bing.com/th/id/OIG.DPTxPWtWB.t_1er.FKku?w=1024&h=1024&rs=1&pid=ImgDetMain" class="card-img-top" alt="Artwork 3">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Artwork Title 3</h5>
-          </div>
-        </div>
-      </div>
-
-      <!-- Repeat the above card block for Cards 4 to 10 -->
-
     </div>
+
+    <!-- Gallery Grid -->
+    <div class="row" id="gallery">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card" data-description="In the ethereal hours, Ruben's bodega becomes a meeting ground for spectral patrons seeking otherworldly treats, blurring the boundaries between the living and the astral realm.">
+          <img src="https://pbs.twimg.com/media/F_EUVsaXQAA3YyK?format=jpg&name=medium" class="card-img-top" alt="Artwork 1">
+          <div class="card-body">
+            <h5 class="card-title">Exchanges</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card" data-description="In the enchanting stillness of midnight, Harry, the elephant man artist, navigates Ruben's eccentric store, shrouded in chalk-dust anonymity, gathering supplies for his fantastical creations under the moonlit veil.">
+          <img src="https://pbs.twimg.com/media/F_EWq7hW4AAkX5a?format=jpg&name=medium" class="card-img-top" alt="Artwork 2">
+          <div class="card-body">
+            <h5 class="card-title">Chalked Dreams</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card" data-description="Embarking on a personal creative exploration, finding solace in the corner of self-expression amidst the ebb and flow of artistic endeavors.">
+          <img src="https://pbs.twimg.com/media/F-5st8uXIAAYJxO?format=jpg&name=medium" class="card-img-top" alt="Crossroads">
+          <div class="card-body">
+            <h5 class="card-title">Crossroads</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Continue repeating the above card block for Cards 4 to 10 -->
+    </div>
+    <!-- End of Gallery Grid -->
   </div>
 
+  <!-- Bootstrap JS and Popper.js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <img id="modalImage" class="img-fluid rounded" alt="Fullscreen Image">
-          <div class="modal-text mt-3">
-            <p id="modalDescription" class="text-muted"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <!-- Add your custom JavaScript here -->
   <script>
-    $(document).ready(function () {
-      $('.card a').on('click', function () {
-        var imageUrl = $(this).find('img').attr('src');
-        var description = $(this).data('description');
-        $('#modalImage').attr('src', imageUrl);
-        $('#modalDescription').text(description);
-      });
+    document.addEventListener("DOMContentLoaded", function () {
+      const gallery = document.getElementById("gallery");
+
+      // Create modals dynamically
+      for (let i = 0; i < gallery.children.length; i++) {
+        const card = gallery.children[i].firstElementChild;
+        const imgUrl = card.firstElementChild.src;
+        const description = card.getAttribute("data-description");
+
+        // Create modal content
+        const modalContent = `
+          <div class="modal fade" id="exampleModal${i + 1}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel${i + 1}" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img src="${imgUrl}" class="img-fluid rounded" alt="Fullscreen Image ${i + 1}">
+                  <div class="modal-text mt-3">
+                    <p class="text-muted">${description}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        // Append modal content to the body
+        document.body.insertAdjacentHTML("beforeend", modalContent);
+
+        // Add click event listener to each card
+        card.addEventListener("click", function () {
+          $(`#exampleModal${i + 1}`).modal("show");
+        });
+      }
     });
   </script>
-
 </body>
 </html>

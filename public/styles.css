@@ -78,17 +78,7 @@ body {
   .modal-body {
     text-align: center !important; /* Center the content within the modal body */
     padding: 0 !important; /* Remove padding for the modal body */
-  }
-  
-  .modal-body img.img-fluid {
-    border-radius: 0.25rem !important;
-    border-radius/* Add slight border-radius to the image */
-    max-width: 100% !important; /* Make sure the image doesn't exceed its container width */
-    height: auto !important; /* Maintain the aspect ratio of the original image */
-    display: block !important; /* Ensure the image is treated as a block element */
-    margin: 0 auto !important; /* Center the image horizontally */
-  }
-  
+  } 
   .modal-text {
     text-align: center !important; /* Center the text within the modal body */
     margin-top: 15px !important;
