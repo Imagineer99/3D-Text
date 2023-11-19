@@ -2,6 +2,8 @@ body {
     background-color: #1f1f1f !important;
     color: #e0e0e0 !important;
   }
+
+  
   
   .container {
     background-color: #2c2c2c !important;
@@ -17,7 +19,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
   }
-  
   .card-title {
     color: #fff !important;
   }
@@ -79,7 +80,7 @@ body {
     text-align: center !important; /* Center the content within the modal body */
     padding: 0 !important; /* Remove padding for the modal body */
   } 
-  .modal-text {
+    .modal-text {
     text-align: center !important; /* Center the text within the modal body */
     margin-top: 15px !important;
     margin-left: 10px !important; 
@@ -119,6 +120,174 @@ body {
   .text-muted {
     color: #fff !important; /* Set the text color for the description to white */
   }
+  body {
+    background-color: #1f1f1f !important;
+    color: #e0e0e0 !important;
+    position: relative;
+  }
   
+  body::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #101110, #0e0b0e, #19191b, #1a1d1a);
+ 
+  }
+  body {
+    background: linear-gradient(45deg, #101110, #0e0b0e, #19191b, #1a1d1a) !important;
+    color: #e0e0e0 !important;
+    position: relative;
+  }
+
+  .text-muted {
+    color: #fff !important; /* Set the text color for the description to white */
+  }
   
+  /* Add this rule at the end */
+  .modal-text .text-muted {
+    color: #fff !important;
+  }
+  body {
+    background-color: #1f1f1f !important;
+    color: #e0e0e0 !important;
+    position: relative;
+  }
   
+  body::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #101110, #0e0b0e, #19191b, #1a1d1a) !important;
+  }
+  
+  .profile-container {
+    background-color: #2c2c2c !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    margin-top: 50px !important;
+  }
+  
+  .profile-image {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .profile-buttons {
+    margin-bottom: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .btn {
+    font-size: 16px !important;
+    border-radius: 5px !important;
+    margin: 0 5px !important;
+  }
+  
+  .btn-primary {
+    background-color: #1da1f2 !important;
+    border: none !important;
+  }
+  
+  .btn-danger {
+    background-color: #e0245e !important;
+    border: none !important;
+  }
+  
+  .btn-primary:hover,
+  .btn-danger:hover {
+    filter: brightness(90%) !important;
+  }
+  
+  .gallery-card {
+    background-color: #373737 !important;
+    border: 1px solid #444 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  }
+  
+  .card-title {
+    color: #fff !important;
+  }
+  
+  .gallery-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+    outline: 1px solid #0ff !important;
+  }
+  
+  .modal {
+    border: none !important;
+    border-radius: 0.25rem !important;
+  }
+  
+  .modal-content {
+    border: none !important;
+    border-radius: 0.25rem !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .modal-body {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  
+  .modal-body img.img-fluid {
+    border-radius: 0.25rem 0.25rem 0 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  
+  .modal-text {
+    text-align: center !important;
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  
+  .text-muted {
+    color: #fff !important;
+  }
+
+/* Add your custom CSS styles here */
+
+.verified-badge {
+  width: 20px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+  margin-left: 5px; /* Adjust as needed */
+}
+/* Add your global styles here */
+
+/* Add your global styles here */
+
+.verified-badge {
+  width: 30px;
+  height: 30px;
+  margin-left: -5px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  #gallery {
+      width: 150%; /* Adjust the width as needed */
+      height: 150%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Align center */
+      margin: 0 -25%; /* Adjust the negative margin to center the gallery */
+  }
+}
+
