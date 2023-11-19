@@ -60,6 +60,7 @@ body {
 
 .modal-content {
   border: none !important; /* Remove borders for the modal content */
+  width: 150% !important;
 }
 
 .modal-body {
@@ -341,16 +342,28 @@ body::before {
 }
 
 .card:hover {
-  background: linear-gradient(45deg, rgba(15, 7, 4, 1), rgba(112, 13, 114, 0.438), rgba(15, 7, 4, 1), rgba(177, 15, 177, 0.479)) !important;
+  background: linear-gradient(45deg, rgba(15, 7, 4, 1), rgba(112, 13, 114, 0.438), rgba(15, 7, 4, 1), rgba(15, 31, 177, 0.479)) !important;
 }
 
 
-.neon-card:nth-child(1):hover {
+.neon-card2:hover {
   background: linear-gradient(45deg, rgba(15, 7, 4, 1), rgba(255, 0, 0, 0.438), rgba(15, 7, 4, 1), rgba(255, 0, 0, 0.479)) !important;
 }
 
-.neon-card:nth-child(2):hover {
-  background: linear-gradient(45deg, rgba(15, 7, 4, 1), rgba(0, 255, 0, 0.438), rgba(15, 7, 4, 1), rgba(0, 255, 0, 0.479)) !important;
+.modal-content {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
-
-/* Add similar styles for other cards */
+.modal-content {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-left: -120px !important;
+  margin-top: 50px !important;
+}
+.modal-content {
+  border: none !important;
+  border-radius: 0.25rem !important;
+  background-color: rgb(0 0 0 / 78%) !important;
+}
