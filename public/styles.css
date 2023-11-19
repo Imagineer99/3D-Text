@@ -434,11 +434,13 @@ body {
 /* Add this to your styles.css file or in your existing CSS */
 .btn-danger {
   background-color: #000 !important; /* Set the background color to black */
-  margin: 0 !important; /* Ensure the button has 0 margin */
-  padding: 1px 5px !important; /* Optional: Adjust padding as needed */
+  margin: 1px !important; /* Ensure the button has 0 margin */
+  padding: 7px 7px !important; /* Optional: Adjust padding as needed */
+  padding-bottom: 2px !important;
+  padding-top: 0 !important; 
   font-size: 24px !important; /* Adjust the font size as needed */
   margin-top: -20px !important; 
-  margin-bottom: 0px !important;
+  margin-bottom: 5px !important;
 }
 
 
